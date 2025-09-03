@@ -197,3 +197,41 @@ Protein Sequence → CNN + BERT → Protein Features (768-dim)
 ---
 
 This project represents a unique opportunity to work at the intersection of AI and healthcare, addressing one of the most expensive and time-consuming challenges in modern medicine while building expertise in cutting-edge machine learning techniques.
+
+---
+
+### v1 Prototype: Batch Drug-Target Interaction Predictions
+
+In this version of the prototype, I extended the initial proof-of-concept (v0) to handle **multiple compounds and multiple protein targets**. I can now predict **binding affinity** quantitatively instead of just classifying interactions as active or inactive.
+
+**Key Features:**
+
+* I can input a **list of drug SMILES** for batch processing.
+* The prototype predicts **binding strength (pIC50)** for each compound-target pair.
+* It supports **multiple protein targets** (currently EGFR; additional targets can be added with trained models).
+* The output is a **DataFrame of predicted pIC50 values**, which allows me to quickly screen compounds.
+
+**What pIC50 means and why it’s useful:**
+
+* **pIC50** is the negative logarithm of IC50, a measure of how strongly a compound binds or inhibits a protein.
+* Higher pIC50 values mean stronger binding; lower values indicate weaker binding.
+* This quantitative measure helps me:
+
+  1. Prioritize compounds in drug discovery.
+  2. Identify promising candidates for drug repurposing.
+  3. Understand potential off-target effects if compounds bind unintended proteins.
+
+**Explanation of the output from Cell H:**
+
+* The table shows predicted pIC50 values for a batch of compounds against EGFR:
+
+| SMILES    | EGFR (pIC50) |
+| --------- | ------------ |
+| Erlotinib | 5.08         |
+| Caffeine  | 4.04         |
+| Aspirin   | 2.97         |
+
+* From this, I can see that Erlotinib has the strongest predicted binding to EGFR, while Caffeine and Aspirin are predicted to bind weakly.
+* This demonstrates the **batch prediction capability**, moving beyond testing just a few sanity-check compounds.
+* It sets the stage for **screening many compounds against one or more protein targets**, which is essential for my drug discovery workflow.
+
