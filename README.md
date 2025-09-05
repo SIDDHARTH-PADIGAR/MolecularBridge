@@ -235,3 +235,57 @@ In this version of the prototype, I extended the initial proof-of-concept (v0) t
 * This demonstrates the **batch prediction capability**, moving beyond testing just a few sanity-check compounds.
 * It sets the stage for **screening many compounds against one or more protein targets**, which is essential for my drug discovery workflow.
 
+---
+
+## Example Predictions and Visualizations
+
+Here are three molecules tested with the model, along with visualizations of their predicted affinities.
+
+---
+
+### 1. Sorafenib (Cancer Drug Example)
+
+![Sorafenib Predictions](download.png)
+This chart shows predictions for **Sorafenib**, a drug used to treat certain cancers.
+
+* Strongest predicted activity against **EGFR**.
+* Very little activity on **ALK and HER2**.
+
+**Takeaway:** The model is capturing Sorafenib’s cancer drug behavior, though in a simplified way.
+
+---
+
+### 2. Theobromine (Chocolate Compound)
+
+![Theobromine Predictions](download.png)
+This is **Theobromine**, the compound found in chocolate.
+
+* Predicted weak activity on **HER2**.
+* Some effect on **ALK**.
+* **No effect on EGFR**.
+
+**Takeaway:** Theobromine isn’t a cancer drug, but the model still detects some weak patterns.
+
+---
+
+### 3. Ibuprofen (Painkiller Example)
+
+![Ibuprofen Predictions](download.png)
+This is **Ibuprofen**, a common pain and fever medicine.
+
+* Predicted **almost no binding** on any cancer target.
+
+**Takeaway:** This matches reality — Ibuprofen isn’t a cancer drug, and the model recognizes that.
+
+---
+
+## Why This Matters for V1
+
+These results prove that the **multi-target predictor works**:
+
+* It recognizes real cancer drugs (like Sorafenib).
+* It assigns weak/partial binding to everyday molecules (like Theobromine).
+* It correctly ignores unrelated medicines (like Ibuprofen).
+
+This first version doesn’t give clinically accurate results yet, but it shows the **concept is solid**. From here, I can refine the data, expand targets, and eventually build toward a more useful research tool.
+
