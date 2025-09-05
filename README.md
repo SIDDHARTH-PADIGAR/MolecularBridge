@@ -245,7 +245,7 @@ Here are three molecules tested with the model, along with visualizations of the
 
 ### 1. Sorafenib (Cancer Drug Example)
 
-![Sorafenib Predictions](download.png)
+<img width="920" height="390" alt="download" src="https://github.com/user-attachments/assets/5341c5b8-4b06-402d-9cd6-64061d85b0af" />
 This chart shows predictions for **Sorafenib**, a drug used to treat certain cancers.
 
 * Strongest predicted activity against **EGFR**.
@@ -257,7 +257,7 @@ This chart shows predictions for **Sorafenib**, a drug used to treat certain can
 
 ### 2. Theobromine (Chocolate Compound)
 
-![Theobromine Predictions](download.png)
+<img width="920" height="390" alt="download" src="https://github.com/user-attachments/assets/a92a49f3-4c88-4f78-975f-02981b7600a4" />
 This is **Theobromine**, the compound found in chocolate.
 
 * Predicted weak activity on **HER2**.
@@ -270,7 +270,7 @@ This is **Theobromine**, the compound found in chocolate.
 
 ### 3. Ibuprofen (Painkiller Example)
 
-![Ibuprofen Predictions](download.png)
+<img width="920" height="390" alt="download" src="https://github.com/user-attachments/assets/9c22ffca-daaa-44ff-9e19-b505451f2374" />
 This is **Ibuprofen**, a common pain and fever medicine.
 
 * Predicted **almost no binding** on any cancer target.
